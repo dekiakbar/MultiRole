@@ -13,6 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
+        $request->user()->authorizeRoles(['Super Admin', 'Admin','User']);
         $this->middleware('auth');
     }
 
@@ -24,5 +25,11 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function contoh(Request $request)
+    {
+        $request->user()->authorizeRoles('User');
+        return view('/kemana');
     }
 }
