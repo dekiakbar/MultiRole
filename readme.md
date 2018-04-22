@@ -1,4 +1,4 @@
-# Artikel Laravel
+# Multi Role Laravel
 Multi Role User, dengan hak akses Super Admin,Admin dan User.
 ## Penunjang
 - [MySql-Server](https://dev.mysql.com/downloads/mysql/)
