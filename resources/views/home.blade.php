@@ -14,7 +14,14 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    Anda Login Sebagai 
+                    @if(Auth::user()->HasRole('Super Admin'))
+                        Super Admin
+                    @elseif(Auth::user()->HasRole('Admin'))
+                        Admin
+                    @elseif(Auth::user()->HasRole('User'))
+                        User
+                    @endif
                 </div>
             </div>
         </div>
