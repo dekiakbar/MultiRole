@@ -39,6 +39,19 @@
                             </div>
                         </div>
 
+                        <div class="form-group">
+                            <label for="role" class="col-md-4 control-label">Hak Akses</label>
+
+                            <div class="col-md-6">
+                                <select name="role" class="selectpicker">
+                                   @foreach($role as $r)
+                                        <option value="{{$r->id}}">{{$r->name}}</option>
+                                   @endforeach
+                                </select>
+
+                            </div>
+                        </div>
+
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>
 
