@@ -17,6 +17,16 @@ Multi Role User, dengan hak akses Super Admin,Admin dan User.
 7. Untuk menghasilkan sampel data, ketikan perintah berikut : `php artisan migrate --seed`
 8. Enjoy :D
 
+## User dan Password
+1. Superadmin 
+	- email : superadmin@superadmin.com 
+	- pass : superadmin123
+2. Superadmin 
+	- email : admin@admin.com 
+	- pass : admin123
+1. User 
+	- email : user@user.com 
+	- pass : user123
 ## Warning
 1. Projek ini dibuat dan tersedia secara gratis tanpa dipungut biaya apapun. 
 2. **Gunakan Sebaik mungkin dan saya tidak BERTANGGUNG JAWAB atas PENYALAHGUNAAN dari aplikasi ini**
