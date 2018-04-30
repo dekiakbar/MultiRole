@@ -13,7 +13,19 @@
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('superadmin',function(){
+	return view('superadmin');
 })->middleware('role:Super Admin');
+
+Route::get('admin',function(){
+	return view('admin');
+})->middleware('role:Admin');
+
+Route::get('user',function(){
+	return view('user');
+})->middleware('role:User');
 
 Auth::routes();
 
